@@ -1,20 +1,13 @@
 {
-  "name": "batch-21",
+  "name": "Batch21",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anaufalfirdaus/Batch21.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/anaufalfirdaus/Batch21/issues"
-  },
-  "homepage": "https://github.com/anaufalfirdaus/Batch21#readme"
+  "type": "commonjs",
+  "repository": "https://github.com/anaufalfirdaus/Batch21.git",
+  "author": "naufalfirdaus <naufalfirdausa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
 }
