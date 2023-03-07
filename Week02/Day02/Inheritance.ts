@@ -68,6 +68,7 @@ class Koenigsegg extends Cars1 {
   }
 }
 
+const tesla = new Cars1('Tesla',250,200000)
 const venom = new Hennessey('Hennessey', 270, 1200000, 'Venom GT');
 const agera = new Koenigsegg('Koenigsegg', 273, 2500000, 'Agera RS');
 
