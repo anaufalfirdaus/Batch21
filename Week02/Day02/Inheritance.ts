@@ -1,4 +1,4 @@
-class Cars1 {
+export class Cars1 {
   protected brand: string;
   protected speed: number;
   protected price: number;
@@ -30,7 +30,7 @@ class Cars1 {
   }
 }
 
-class Hennessey extends Cars1 {
+export class Hennessey extends Cars1 {
   private model: string;
 
   constructor(brand: string, speed: number, price: number, model: string) {
@@ -49,7 +49,7 @@ class Hennessey extends Cars1 {
   }
 }
 
-class Koenigsegg extends Cars1 {
+export class Koenigsegg extends Cars1 {
   private model: string;
 
   constructor(brand:string, speed: number, price: number, model: string) {
