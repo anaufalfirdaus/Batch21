@@ -32,6 +32,7 @@ const _regions = require("./regions");
 const _regions1 = require("./regions1");
 const _shippers = require("./shippers");
 const _suppliers = require("./suppliers");
+const _user = require("./user");
 
 function initModels(sequelize) {
   const categories = _categories(sequelize, DataTypes);
@@ -49,7 +50,8 @@ function initModels(sequelize) {
   const regions1 = _regions1(sequelize, DataTypes);
   const shippers = _shippers(sequelize, DataTypes);
   const suppliers = _suppliers(sequelize, DataTypes);
-
+  const user = _user(sequelize, DataTypes);
+  
   orders.belongsToMany(products, { as: 'ordet_prod_id_products', through: orders_detail, foreignKey: "ordet_order_id", otherKey: "ordet_prod_id" });
   products.belongsToMany(orders, { as: 'ordet_order_id_orders', through: orders_detail, foreignKey: "ordet_prod_id", otherKey: "ordet_order_id" });
   locations.belongsTo(countries, { as: "country", foreignKey: "country_id"});
@@ -101,6 +103,7 @@ function initModels(sequelize) {
     regions1,
     shippers,
     suppliers,
+    user,
   };
 }
 
